@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AsilNetCore.Tests
+namespace F10Core.Tests
 {
     public class Employee : IEquatable<Employee>
     {

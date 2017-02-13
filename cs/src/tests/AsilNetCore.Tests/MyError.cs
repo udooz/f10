@@ -1,4 +1,4 @@
-﻿namespace AsilNetCore.Tests
+﻿namespace F10Core.Tests
 {
     using System;
 

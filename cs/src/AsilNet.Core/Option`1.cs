@@ -17,6 +17,12 @@
         internal Option(T value)
             : this(value, value != null) { }
 
+        internal Option(NoneObject none)
+        {
+            this.Value = default(T);
+            this.isSome = false;
+        }
+
         internal Option()
             : this(default(T)) { }
 
@@ -26,7 +32,6 @@
             get { return isSome; }
         }
         public static readonly Option<T> None = new Option<T>(default(T), false);
-        
         public static implicit operator Option<T>(T value) => Some<T>(value);
         public static implicit operator Option<T>(NoneObject none) => None;
 

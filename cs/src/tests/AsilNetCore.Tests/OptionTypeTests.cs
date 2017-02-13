@@ -1,4 +1,4 @@
-﻿namespace AsilNetCore.Tests
+﻿namespace F10Core.Tests
 {
     using System;
     using Xunit;
@@ -65,7 +65,7 @@
         public void EqualsWithOneNone_ShouldNotBeSame()
         {
             var employee1 = Some(new Employee("Tamil"));
-            var employee2 = Some<Employee>(null);            
+            var employee2 = Some<Employee>(None);            
             Assert.NotEqual(employee1, employee2);
         }
 
@@ -73,7 +73,7 @@
         public void EqualsWithBothNone_ShouldBeSame()
         {
             Option<Employee> employee1 = None;
-            Option<Employee> employee2 = Some<Employee>(null);
+            Option<Employee> employee2 = Some<Employee>(None);
 
             Assert.Equal(employee1, employee2);
         }
