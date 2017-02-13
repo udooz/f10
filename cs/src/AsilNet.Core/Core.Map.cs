@@ -18,6 +18,7 @@ namespace F10
         public static Option<R> Map<T, R>(this Option<T> option,
             Func<T, R> f)
         {
+
             return option.Match(
                 (t) => Some(f(t)),
                 () => None);

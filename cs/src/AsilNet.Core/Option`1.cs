@@ -11,7 +11,15 @@
         
         internal Option(T value, bool isSome)
         {
-            this.Value = value;
+            if (value != null && typeof(T).Equals(this.GetType()))
+            {
+                var inOption = (Option<T>)value;
+                this.Value = inOption.Value;
+            }
+            else
+            {
+                this.Value = value;
+            }
             this.isSome = isSome;
         }
         internal Option(T value)
