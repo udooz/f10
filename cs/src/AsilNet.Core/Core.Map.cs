@@ -6,10 +6,10 @@ namespace F10
 
     public static partial class Core
     {
-        public static IEnumerable<R> Map<T, R>(this IEnumerable<T> incolls,
+        public static IEnumerable<R> Map<T, R>(this IEnumerable<T> these,
             Func<T, R> f)
         {
-            foreach (var t in incolls)
+            foreach (var t in these)
             {
                 yield return f(t);
             }

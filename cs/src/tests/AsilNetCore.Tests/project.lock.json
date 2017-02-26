@@ -2485,12 +2485,6 @@
         "framework": ".NETStandard,Version=v1.6",
         "dependencies": {
           "NETStandard.Library": "1.6.0"
-        },
-        "compile": {
-          "netstandard1.6/AsilNet.Core.dll": {}
-        },
-        "runtime": {
-          "netstandard1.6/AsilNet.Core.dll": {}
         }
       }
     }
@@ -7477,8 +7471,7 @@
     },
     "AsilNet.Core/1.0.0": {
       "type": "project",
-      "path": "../../AsilNet.Core/project.json",
-      "msbuildProject": "../../AsilNet.Core/AsilNet.Core.xproj"
+      "path": "../../AsilNet.Core/project.json"
     }
   },
   "projectFileDependencyGroups": {

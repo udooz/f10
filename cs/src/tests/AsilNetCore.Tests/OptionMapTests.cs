@@ -13,14 +13,17 @@
         {
             var baseValue = 2;
             var expected = Some(Math.Sqrt(baseValue));
-            var actual = Some(2).Map((n) => Math.Sqrt(n));
+            var actual = Some(2).Map(n => Math.Sqrt(n));
             Assert.Equal(expected, actual);
         }
 
-        [Fact(Skip = "Suitable solution not implemented on Option")]
-        public void OptionWithNone_ApplyMap_ReturnNone()
-        {
-            Assert.True(true);
-        }
+        //[Fact(Skip = "Suitable solution not implemented on Option")]
+        //public void OptionWithNone_ApplyMap_ReturnNone()
+        //{
+        //    var expected = None;
+        //    var actual = "s".ParseInt32().FlatMap(n => Math.Sqrt(n));
+        //}
+
+
     }
 }
